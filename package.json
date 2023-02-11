@@ -2,7 +2,7 @@
   "name": "my-test-project-2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mohammadnejat.github.io/nejat.io",
+  "homepage": "https://mohammadnejat.github.io/nejats",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
