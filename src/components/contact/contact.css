@@ -1,0 +1,92 @@
+.contact__text-header {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact_card-text > h4 {
+    padding: 0.4rem 0 0.4rem;
+}
+
+.contact__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.contact__cards {
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.contact__card {
+    height: 25vh;
+    width: 60%;
+    border-radius: 3rem;
+    margin: 1rem 1rem;
+    background: var(--color-bg-variant);
+}
+
+.contact__icons {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 1rem;
+}
+
+.contact_card-text {
+    text-align: center;
+}
+
+input {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: 2px solid var(--color-light);
+    color: var(--color-light);
+}
+
+textarea {
+    border-radius: 1rem;
+    width: 100%;
+    background: transparent;
+    border: 2px solid var(--color-light);
+    resize: none;
+    display: block;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-light);
+}
+
+/* ================================ Media Queries (Medium Devices) =================================*/
+@media screen and (max-width: 1024px) {
+    .contact__section{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contact__cards {
+        margin: 0;
+    }
+
+    .contact__card {
+        margin: 1.5rem auto;
+    }
+}
+
+/* ================================ Media Queries (SMALL Devices) =================================*/
+@media screen and (max-width: 600px) {
+    .contact__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+    }
+    .contact__card {
+        margin: 0;
+        width: 100%;
+    }
+}

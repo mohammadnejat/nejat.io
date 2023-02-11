@@ -1,0 +1,54 @@
+.testmonials__text-header {
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+#testmonials {
+    margin: 0 auto;
+    width: 50%;
+}
+.swiper {
+    height: 20rem;
+}
+
+
+.images__swiper {
+    margin: 0 auto;
+    width: 40%;
+    padding: 3rem;
+    background-color: var(--color-bg-variant);
+    border-radius: 2rem;
+}
+
+.client__avatar {
+    width: 5rem;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+}
+
+.swiper-pagination {
+    margin-top: 4rem;
+}
+
+
+.swiper__text {
+    text-align: center;
+}
+
+/* ================================ Media Queries (Medium Devices) =================================*/
+@media screen and (max-width: 1024px) {
+    #testmonials {
+        width: 80%;
+    }
+}
+
+/* ================================ Media Queries (SMALL Devices) =================================*/
+@media screen and (max-width: 600px) {
+    #testmonials {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,81 @@
+
+
+.experience__text{ 
+    text-align: center;    
+}
+
+.experience__text h5 {
+    color: var(--color-light);
+}
+
+
+.container__experience {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.front__end {
+    padding: 2rem 4rem;
+    width: 100%;
+    height: 23rem;
+    margin-top: 2rem;
+    background:  var(--color-bg-variant);
+    border-radius: 3rem;
+    border: 3px solid var(--color-bg);
+    transition: var(--transition);
+}
+
+.front__end:hover {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.back__end {
+    padding: 2rem 4rem;
+    width: 100%;
+    height: 23rem;
+    margin-top: 2rem;
+    background:  var(--color-bg-variant);
+    border-radius: 3rem;
+    border: 3px solid var(--color-bg);
+    transition: var(--transition);
+}
+
+.back__end:hover {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.exp_card_text {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.card__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.experience__details {
+    display: flex;
+    gap: 1rem;
+}
+
+.exp_icons {
+    color: var(--color-primary);
+    margin-top: 6px;
+}
+
+/* ================================ Media Queries (Medium Devices) =================================*/
+@media screen and (max-width: 1024px) {}
+
+
+/* ================================ Media Queries (Small Devices) =================================*/
+@media screen and (max-width: 600px) {
+
+    .container__experience {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

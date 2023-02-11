@@ -1,0 +1,125 @@
+
+.about__container {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    
+}
+
+#about {
+    margin-top: 2rem;
+}
+
+.text__about {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about__me {
+    width: 100%;
+    aspect-ratio: 4/2.3;
+    border-radius: 2rem;
+    background: linear-gradient(40deg,
+            transparent,
+            var(--color-primary),
+            transparent);
+    display: grid;
+    place-items: center;
+    margin-top: 4rem;
+}
+
+.about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about__me-image:hover {
+    transform: rotate(0);
+}
+
+.about__icons {
+    font-size: 30px;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+
+
+.about__cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about_card {
+    border-radius: 20px;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.about_card:hover {
+    background: transparent;
+    border-color: var(--color-white);
+}
+
+div > p {
+    display: block;
+    margin: 2rem 0;
+}
+
+.about_card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.about__content {
+    display: block;
+}
+
+/* ================================ Media Queries (Medium Devices) =================================*/
+@media screen and (max-width: 1024px) {
+
+    .about__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-right: 0;
+    }
+
+    .about__me {
+        margin: 0 auto 2rem;
+        width: 50%;
+    }
+
+    .about__cards {
+        gap: 1rem;
+        width: 90%;
+    }
+
+    div > p {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .btn__about {
+        display: flex;
+        justify-content: center;
+    }  
+}
+
+/* ================================ Media Queries (Small Devices) =================================*/
+@media screen and (max-width: 600px) {
+
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+  
+
+}
